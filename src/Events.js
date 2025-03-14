@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 import "./App.css";
 
 const events = [
@@ -24,8 +26,20 @@ const events = [
 ];
 
 function Events() {
+  const navigate = useNavigate();
+
   return (
-    <div className="container">
+    <div className="events-container">
+      {/* Flèche de retour sans texte */}
+      <motion.button
+        className="back-button"
+        onClick={() => navigate("/")}
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <FaArrowLeft className="icon" />
+      </motion.button>
+
       <h1>Liste des Événements</h1>
       <div className="event-grid">
         {events.map((event) => (

@@ -14,7 +14,7 @@ function HomePage() {
           whileTap={{ scale: 0.9 }}
           className="btn"
         >
-          <Link to="/events">Voir les événements</Link>
+          <Link to="/events">Détails des événements</Link>
         </motion.button>
 
         <motion.button
@@ -23,7 +23,7 @@ function HomePage() {
           className="btn drive"
           onClick={() => window.open("https://drive.google.com/drive/folders/1vpoWsed2dIRBUypa4Xua3UBb61SuVf33", "_blank")}
         >
-          Accéder au Drive
+          Téléverser des photos
         </motion.button>
       </div>
     </div>

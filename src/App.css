@@ -41,12 +41,12 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #001f3f; /* Bleu nuit */
+  background-color: #001f3f;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: white; /* Texte blanc */
+  color: white;
 }
 
 .container {
@@ -56,9 +56,45 @@ body {
 
 h1 {
   font-size: 2rem;
-  color: #00d4ff; /* Bleu ciel */
+  color: #00d4ff;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.drive {
+  background: #ff4757;
+}
+
+.drive:hover {
+  background: #c82333;
 }
 
 .event-grid {
@@ -69,7 +105,7 @@ h1 {
 }
 
 .event-card {
-  background: #002855; /* Bleu foncé */
+  background: #002855;
   color: white;
   padding: 20px;
   border-radius: 10px;
@@ -83,26 +119,17 @@ h1 {
 }
 
 h2 {
-  color: #00d4ff; /* Bleu ciel */
+  color: #00d4ff;
   font-size: 1.5rem;
 }
 
 .location {
   font-weight: bold;
-  color: #80e0ff; /* Bleu clair */
+  color: #80e0ff;
 }
 
 .details {
-  color: #b0e0ff; /* Bleu pâle */
+  color: #b0e0ff;
   margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-  
-  .event-card {
-    padding: 15px;
-  }
-}

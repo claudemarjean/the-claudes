@@ -5,19 +5,19 @@ import "./App.css";
 const events = [
   {
     id: 1,
-    date: "15 Juin 2025",
+    date: "Lorem Ipsum Dolor",
     location: "Lorem Ipsum Dolor",
     details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 2,
-    date: "22 Juillet 2025",
+    date: "Lorem Ipsum Dolor",
     location: "Sit Amet Consectetur",
     details: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 3,
-    date: "5 Août 2025",
+    date: "Lorem Ipsum Dolor",
     location: "Adipiscing Elit",
     details: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
   },

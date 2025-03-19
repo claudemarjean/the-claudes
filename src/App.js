@@ -1,13 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import "./App.css";
 import Events from "./Events";
 
 function HomePage() {
   return (
     <div className="container">
-      <h1>Bienvenue</h1>
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet" />
+      </Helmet>
+
+      <h4 className="italianno" >Bienvenue chez "The Claudes Step Two".</h4>
       <div className="cards">
         {/* Carte pour les détails des événements */}
         <div className="card">

@@ -146,5 +146,8 @@ h4 {
 }
 
 .no-translate {
-  unicode-bidi: plaintext;
+  unicode-bidi: isolate;
+  direction: ltr;
+  -webkit-user-select: none;
+  -webkit-text-security: none;
 }

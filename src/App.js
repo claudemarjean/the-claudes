@@ -9,6 +9,7 @@ function HomePage() {
   return (
     <div className="container">
       <Helmet>
+        <meta name="google" content="notranslate" />
         <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet" />
       </Helmet>
 

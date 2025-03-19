@@ -1,42 +1,4 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/* Styles généraux */
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -49,11 +11,13 @@ body {
   color: white;
 }
 
+/* Conteneur principal */
 .container {
   text-align: center;
   padding: 20px;
 }
 
+/* Titre */
 h1 {
   font-size: 2rem;
   color: #00d4ff;
@@ -61,8 +25,10 @@ h1 {
   letter-spacing: 2px;
 }
 
+/* Boutons */
 .buttons {
   display: flex;
+  flex-wrap: wrap; /* Ajouté pour éviter les problèmes sur mobile */
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
@@ -89,49 +55,47 @@ h1 {
   background: #0056b3;
 }
 
-.drive {
+.btn.drive {
   background: #28a745;
 }
 
-.drive:hover {
+.btn.drive:hover {
   background: #1e7e34;
 }
 
-.event-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* Cartes */
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
-  padding: 20px;
+  margin-top: 20px;
 }
 
-.event-card {
-  background: #002855;
+.card {
+  background: #002855; /* Changement pour correspondre au fond général */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 212, 255, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
   color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0, 212, 255, 0.2);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.event-card:hover {
+.card-content p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #80e0ff;
+}
+
+/* Effet au survol */
+.event-card:hover, .card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 4px 20px rgba(0, 212, 255, 0.6);
 }
 
-h2 {
-  color: #00d4ff;
-  font-size: 1.5rem;
-}
-
-.location {
-  font-weight: bold;
-  color: #80e0ff;
-}
-
-.details {
-  color: #b0e0ff;
-  margin-top: 10px;
-}
+/* Bouton retour */
 .back-button {
   background-color: transparent;
   color: white;
@@ -155,4 +119,21 @@ h2 {
 .icon {
   font-size: 28px;
   color: #ffffff;
+}
+
+/* Grid pour la page des événements */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.event-card {
+  background: #002855;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 212, 255, 0.2);
+  transition: transform 0.6s ease-in-out, box-shadow 0.3s ease-in-out;
 }

@@ -12,7 +12,7 @@ function HomePage() {
         <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet" />
       </Helmet>
 
-      <h4 className="italianno" >Bienvenue chez "The Claudes Step Two".</h4>
+      <h4 className="italianno" >Bienvenue chez <span className="no-translate">"The Claudes Step Two"</span>.</h4>
       <div className="cards">
         {/* Carte pour les détails des événements */}
         <div className="card">

@@ -140,7 +140,11 @@ h4 {
 
 
 .italianno {
-  font-family: 'Italianno', cursive;
+  font-family: 'Pacifico', cursive;
   font-size: 2rem;
   text-align: center;
+}
+
+.no-translate {
+  unicode-bidi: plaintext;
 }

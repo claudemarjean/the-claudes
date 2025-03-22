@@ -13,12 +13,12 @@ function HomePage() {
         <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet" />
       </Helmet>
 
-      <h4 className="italianno" >The Claudes</h4>
+      <h4>404 : célibataires not found!!!</h4>
       <div className="cards">
         {/* Carte pour les détails des événements */}
         <div className="card">
           <div className="card-content">
-            <p>Les détails de ce grand jour, remplis d'amour, vous attendent ici.</p>
+            <p>Découvrez chaque instant magique de ces jours, juste ici.</p>
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}

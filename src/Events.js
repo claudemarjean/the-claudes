@@ -23,7 +23,7 @@ const events = [
   },{
     id: 3,
     date: "10 Mai 2025",
-    evenement : "Évènement :Mariage Civil ",
+    evenement : "Évènement : Mariage Civil ",
     location: "Lieu : Fianarantsoa",
     horaire : "Horaire : 14H00",
     details: "Ensuite départ pour fiançailles Andoharegna ",

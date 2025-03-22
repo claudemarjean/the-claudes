@@ -7,22 +7,27 @@ import "./App.css";
 const events = [
   {
     id: 1,
-    date: "Lorem Ipsum Dolor",
-    location: "Lorem Ipsum Dolor",
+    date: "07 Mai 2025",
+    evenement : "Évènement : Fiançailles ",
+    location: "Lieu : Mananjary",
+    horaire : "Horaire : Après-midi",
     details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 2,
-    date: "Lorem Ipsum Dolor",
-    location: "Sit Amet Consectetur",
-    details: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
+    date: "09 Mai 2025",
+    evenement : "Évènement : Fafy ",
+    location: "Lieu :Tsaravary (Mananjary)",
+    horaire : "Horaire : Avant-midi",
+    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },{
     id: 3,
-    date: "Lorem Ipsum Dolor",
-    location: "Adipiscing Elit",
-    details: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-  },
+    date: "10 Mai 2025",
+    evenement : "Évènement :Mariage Civil ",
+    location: "Lieu : Fianarantsoa",
+    horaire : "Horaire : 14H00",
+    details: "Ensuite départ pour fiançailles Andoharegna ",
+  }
 ];
 
 function Events() {
@@ -50,8 +55,14 @@ function Events() {
             whileTap={{ scale: 0.95 }}
           >
             <h2>{event.date}</h2>
+            <p className="details">{event.evenement}</p>
             <p className="location">{event.location}</p>
-            <p className="details">{event.details}</p>
+            <p className="details">{event.horaire}</p>
+            {
+              event.id === 3 && (
+                <p className="details">{event.details}</p>
+              )
+            }
           </motion.div>
         ))}
       </div>

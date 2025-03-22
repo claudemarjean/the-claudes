@@ -45,7 +45,7 @@ function Events() {
         <FaArrowLeft className="icon" />
       </motion.button>
 
-      <h1>Liste des Événements</h1>
+      <h1>Liste des Évènements</h1>
       <div className="event-grid">
         {events.map((event) => (
           <motion.div

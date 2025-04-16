@@ -27,7 +27,7 @@ const events = [
     location: "Lieu : Fianarantsoa",
     horaire : "Horaire : 12H00",
     stepOne: "*Cocktail*",
-    stepTwo : "Départ pour fiançailles Andoharegna (Mahasoabe) ",
+    stepTwo : "Départ pour la célébration à Andoharegna (Mahasoabe).",
     stepThree : "🎉Ambiance soirée jusqu’à l’aube 😉"
   }
 ];

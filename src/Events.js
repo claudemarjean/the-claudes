@@ -26,8 +26,9 @@ const events = [
     evenement : "Évènement : Mariage Civil ",
     location: "Lieu : Fianarantsoa",
     horaire : "Horaire : 12H00",
-    details: "***Cocktail*** ",
-    detailsplus : "=> Ensuite départ pour fiançailles Andoharegna "
+    stepOne: "*Cocktail*",
+    stepTwo : "Départ pour fiançailles Andoharegna (Mahasoabe) ",
+    stepThree : "🎉Ambiance soirée jusqu’à l’aube 😉"
   }
 ];
 
@@ -62,9 +63,10 @@ function Events() {
             {
               event.id === 3 && (
                 <>
+                  <p className="details">{event.stepOne}</p>
                   <p className="details">-----------------</p>
-                  <p className="details">{event.details}</p>
-                  <p className="details">{event.detailsplus}</p>
+                  <p className="details">{event.stepTwo}</p>
+                  <p className="details">{event.stepThree}</p>
                 </>
               )
             }

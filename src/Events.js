@@ -25,8 +25,9 @@ const events = [
     date: "10 Mai 2025",
     evenement : "Évènement : Mariage Civil ",
     location: "Lieu : Fianarantsoa",
-    horaire : "Horaire : 14H00",
-    details: "Ensuite départ pour fiançailles Andoharegna ",
+    horaire : "Horaire : 12H00",
+    details: "***Cocktail*** ",
+    detailsplus : "=> Ensuite départ pour fiançailles Andoharegna "
   }
 ];
 
@@ -60,9 +61,14 @@ function Events() {
             <p className="details">{event.horaire}</p>
             {
               event.id === 3 && (
-                <p className="details">{event.details}</p>
+                <>
+                  <p className="details">-----------------</p>
+                  <p className="details">{event.details}</p>
+                  <p className="details">{event.detailsplus}</p>
+                </>
               )
             }
+
           </motion.div>
         ))}
       </div>
